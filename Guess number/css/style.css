@@ -1,0 +1,134 @@
+/* GLOBAL===================== */
+:root{
+    --cyan: #b0fafa;
+    --blue-dark: #483D8B;
+    --blue-light: #1E90FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu, sans serif;
+    text-decoration: none;
+}
+/* HEADER ==================== */
+header{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px, 100px, 100px, 200px rgba(168, 49, 49, 0.5);
+    background-color: var(--cyan);
+}
+header a h1{
+    color: var(--blue-dark);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+/* CONTEINER ================= */
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #e0ffff 0%, #ffffff 100%);
+}
+/* FORM ====================== */
+.conteiner form{
+    background: var(--blue-light);
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.5rem;
+    margin-top: 5%;
+    border-radius: 0.5rem;
+}
+.conteiner form label{
+    color: rgb(4, 27, 231);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.conteiner form input{
+    border: 0;
+    outline: 0;
+    margin: 5% 0px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 0.5rem;
+    box-shadow: 2px, 2px, 2px, 0px rgb(0, 0, 0, 0.1);
+}
+.conteiner form input :focus{
+    box-shadow: inset 1px, 2px, 4px, 2px rgb(0, 0, 0, 0.1);
+}
+.conteiner form button{
+    cursor: pointer;
+    margin-top: 5%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: var(--blue-dark);
+    color: var(--cyan);
+    transition: 0.5 ease-in-out;
+}
+.conteiner form button:hover{
+    color: var(--blue-light);
+    background: var(--cyan);
+}
+/* SECTION =================== */
+.conteiner .result-box{
+    margin-top: 3%;
+    background: #27adeb;
+    width: 30%;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 1px, 1px, 5px, 0px rgb(0, 0, 0, 0.2);
+    color: blue;
+}
+.conteiner .result-box h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 5% 0%;
+    color: black
+}
+
+.conteiner .result-box span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black
+}
+
+/* BTN JOGAR DE NOVO ========= */
+.conteiner #btnRestart{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: var(--cyan);
+    color: var(--blue-light);
+    padding: 1rem;
+    margin-top: 2%;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 1px, 1px, 5px, 0px rgb(0, 0, 0, 0.3);
+    transition: 1.0 ease-in-out;
+
+    display: none;
+}
+.conteiner #btnRestar:hover{
+    background: var(--blue-light);
+    color: var(--cyan);
+}
+
+/* FOOTER ===================== */
+footer{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--cyan);
+    margin-top: 3%;
+    
+}
